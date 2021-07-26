@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css"/>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <h1>nice to actually meet ya</h1>
+            <button id = "1" onclick="clickBut()">hehe</button>
+        </div>
+    </div>
+    
+
+    <script>
+        const butt = document.getElementById("1");
+        const handler = () => {
+                butt.innerText = "sosi jopu";
+                console.log('click');
+                butt.removeEventListener("click", handler);
+            }
+         
+        function clickBut() {
+            butt.addEventListener("click", handler);    
+
+        };
+    </script>
+</body>
+</html>
+
