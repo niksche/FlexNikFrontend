@@ -3,7 +3,7 @@ let http = require('http');
 
 const server = http.createServer((req,res)=> {
 
-    const path = `.${req.url === '/' ? '/index.html' : req.url }`;
+    const path = `./public${req.url === '/' ? '/index.html' : req.url }`;
 
     console.log('requested from ', req.url);
     fs.readFile(path, (error, file) => {
