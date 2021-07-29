@@ -1,11 +1,12 @@
 let fs = require('fs');
 let http = require('http');
+const debug = require('debug');
 
 const server = http.createServer((req,res)=> {
 
     const path = `./public${req.url === '/' ? '/index.html' : req.url }`;
 
-    console.log('requested from ', req.url);
+    debug('requested from ', req.url);
     fs.readFile(path, (error, file) => {
         if (error) {
             res.write('error');
@@ -19,4 +20,4 @@ const server = http.createServer((req,res)=> {
     
 });
 
-server.listen(3003);
+server.listen(8000);
