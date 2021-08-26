@@ -16,11 +16,19 @@ h1 {
 }
 
 .input {
-    /* background-color: skyblue; */
     padding: 10px;
     margin: 10px;
     border: solid 1px skyblue;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+}
+
+.input:hover {
+    box-shadow: 0px 0px 10px darkblue;
+}
+
+.input:active {
+    box-shadow: 0px 0px 10px darkblue;
+    /* border: solid 0px darkblue;  */
 }
