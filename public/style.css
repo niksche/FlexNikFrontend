@@ -8,3 +8,19 @@ h1 {
     align-content: center;
     justify-content: center;
 }
+
+
+.flex {
+    width: 150px;
+    height: 150px;
+}
+
+.input {
+    /* background-color: skyblue; */
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px skyblue;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
